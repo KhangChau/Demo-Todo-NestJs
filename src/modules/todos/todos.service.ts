@@ -21,7 +21,8 @@ export class TodosService {
   }
 
   public async findAll() {
-    return await this.todoModel.find();
+    const filterTodo: FilterQuery<Todo> = { deletedAt: null };
+    return await this.todoModel.find(filterTodo);
   }
 
   public async findOneById(id: string) {
