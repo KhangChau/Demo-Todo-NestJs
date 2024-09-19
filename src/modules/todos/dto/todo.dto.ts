@@ -1,6 +1,6 @@
 import { ApiProperty, ApiPropertyOptional } from '@nestjs/swagger';
 import { Expose } from 'class-transformer';
-import { TransformObjectId } from 'src/common/transform/transform-object-id';
+import { TransformObjectId } from '../../../common/transform/transform-object-id';
 
 export class TodoDto {
   @ApiProperty({ name: 'todoId' })
